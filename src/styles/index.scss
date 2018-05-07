@@ -1,0 +1,26 @@
+/* tachyons css framework */
+@import '~tachyons';
+
+/* normalizations */
+.link:focus { outline: 0; }
+
+// :root {
+//   --red: #ff0000;
+//   --white: #ffffff;
+// }
+//
+// .white {
+//   color: var(--white);
+// }
+//
+// .bg-red {
+//   background-color: var(--red);
+// }
+//
+// .hover-red:hover {
+//   color: var(--red);
+// }
+//
+// .hover-bg-red:hover {
+//   background-color: var(--red);
+// }

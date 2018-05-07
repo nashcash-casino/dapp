@@ -1,0 +1,53 @@
+{
+  "name": "nashcash-dapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop --port 3000",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bignumber.js": "^7.0.1",
+    "gatsby": "^1.9.256",
+    "gatsby-link": "^1.6.41",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-extras": "^0.6.0",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1",
+    "tachyons": "^4.9.1",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "dotenv": "^5.0.1",
+    "gatsby-plugin-google-analytics": "^1.0.31",
+    "gatsby-plugin-postcss-sass": "^1.0.20",
+    "gatsby-plugin-purify-css": "^2.2.1",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sitemap": "^1.2.23",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.5",
+    "postcss-import": "^11.1.0",
+    "postcss-simple-vars": "^4.1.0",
+    "prettier-standard": "^8.0.1"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "prettier-standard",
+        "git add"
+      ]
+    }
+  }
+}
