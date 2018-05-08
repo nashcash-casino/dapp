@@ -16,13 +16,16 @@ const Html = ({ headComponents, body, postBodyComponents }) => (
     <head>
       <meta charSet='utf-8' />
       <meta httpEquiv='x-ua-compatible' content='ie=edge' />
-      <meta name='viewport' content='width=320, initial-scale=1.0, shrink-to-fit=yes user-scalable=no' />
+      <meta
+        name='viewport'
+        content='width=320, initial-scale=1.0, shrink-to-fit=yes user-scalable=no'
+      />
 
       {/* Fonts + Favicon */}
       <link rel='shortcut icon' type='image/png' href='/favicon.png' />
 
       {/* Put children first to establish tag precedence */}
-      { headComponents }
+      {headComponents}
 
       <title>NashCash</title>
       <meta property='description' content={description} />
@@ -42,17 +45,20 @@ const Html = ({ headComponents, body, postBodyComponents }) => (
       <meta name='twitter:site' content='@nashcash_casino' />
 
       {/* Styles */}
-      { process.env.NODE_ENV === 'production'
-        ? <style
+      {process.env.NODE_ENV === 'production' ? (
+        <style
           id='gatsby-inlined-css'
           dangerouslySetInnerHTML={{ __html: styles }}
         />
-        : null
-      }
+      ) : null}
     </head>
-    <body className='maven gray bg-near-black h-100 ma0'>
-      <div className='h-100' id='___gatsby' dangerouslySetInnerHTML={{ __html: body }} />
-      { postBodyComponents }
+    <body className='near-white bg-near-black h-100 ma0'>
+      <div
+        className='h-100'
+        id='___gatsby'
+        dangerouslySetInnerHTML={{ __html: body }}
+      />
+      {postBodyComponents}
     </body>
   </html>
 )

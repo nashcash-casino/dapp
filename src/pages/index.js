@@ -17,13 +17,37 @@ export default () => (
       </Link>
     </div>
     <p className='f4 lh-copy measure-narrow center'>
-      The NashCash Casino is an experiential artwork on display at the <a className='link b dark-red' href='https://knockdown.center/' target='_blank'>Knockdown Center</a> during <a className='link b dark-red' href='https://etherealsummit.com/arts-grant/' target='_blank'>Ethereal NY 2018.</a>
+      The NashCash Casino is an experiential artwork on display at the{' '}
+      <a
+        className='link b dark-red'
+        href='https://knockdown.center/'
+        target='_blank'
+      >
+        Knockdown Center
+      </a>{' '}
+      during{' '}
+      <a
+        className='link b dark-red'
+        href='https://etherealsummit.com/arts-grant/'
+        target='_blank'
+      >
+        Ethereal NY 2018.
+      </a>
     </p>
     <p className='f4 lh-copy measure-narrow center'>
-      The installation utilizes disorienting atmosphere, live actors, game theory, and <a className='link b dark-red' href='https://etherscan.io/address/0xdc1d53dc4f8e44c2fabe22e76236bcdffab77124' target='_blank'>Ethereum smart-contracts.</a>
+      The installation utilizes disorienting atmosphere, live actors, game
+      theory, and{' '}
+      <a
+        className='link b dark-red'
+        href='https://etherscan.io/address/0xdc1d53dc4f8e44c2fabe22e76236bcdffab77124'
+        target='_blank'
+      >
+        Ethereum smart-contracts.
+      </a>
     </p>
     <p className='f4 lh-copy measure-narrow center'>
-       Participants are challenged to consider their incentives in an experience with abstractions of value, fellow players, and the digital nether.
+      Participants are challenged to consider their incentives via interaction
+      with abstractions of value, fellow players, and the digital nether.
     </p>
   </Container>
 )
