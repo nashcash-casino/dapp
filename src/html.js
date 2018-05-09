@@ -24,11 +24,11 @@ const Html = ({ headComponents, body, postBodyComponents }) => (
       {/* Fonts + Favicon */}
       <link rel='shortcut icon' type='image/png' href='/favicon.png' />
 
-      {/* Put children first to establish tag precedence */}
-      {headComponents}
-
       <title>NashCash</title>
       <meta property='description' content={description} />
+
+      {/* Put children first to establish tag precedence */}
+      {headComponents}
 
       <meta property='og:type' content='website' />
       <meta property='og:locale' content='en_US' />

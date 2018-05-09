@@ -7,7 +7,8 @@
     "dev": "gatsby develop --port 3000",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "deploy": "gatsby build && gh-pages -b master -d public --repo git@github.com:nashcash-casino/nashcash-casino.github.io.git"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -21,6 +22,7 @@
     "react-icons": "^2.2.7",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
+    "react-twitter-widgets": "^1.7.1",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1",
     "tachyons": "^4.9.1",
@@ -35,7 +37,7 @@
     "gatsby-plugin-postcss-sass": "^1.0.20",
     "gatsby-plugin-purify-css": "^2.2.1",
     "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-sitemap": "^1.2.23",
+    "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.5",
     "postcss-import": "^11.1.0",

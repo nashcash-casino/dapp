@@ -9,7 +9,8 @@ import Container from '../components/ui/Container'
 
 export default () => (
   <Container>
-    <Helmet>
+    <Helmet title='team'>
+      <title>Team</title>
       <link rel='canonical' href='https://nashcash.casino/team' />
     </Helmet>
     <div className='measure center mt5'>
@@ -99,7 +100,7 @@ export default () => (
       <li className='flex justify-between items-center lh-copy ph2 pv3 ph0-l bb b--white-50'>
         <img className='w2 h2 w3-ns h3-ns br-100' src='/ron.jpg' />
         <div className='pl3 flex-auto'>
-          <span className='f4 db white'>YFR</span>
+          <span className='f4 db white'>Ron Gierlach</span>
           <span className='f6 db white'>Technical Lead</span>
         </div>
         <div>
