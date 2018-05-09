@@ -5,11 +5,10 @@ require('dotenv').config({
 module.exports = {
   plugins: [
     // analytics & SEO
-    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-xxxxxxxx-x' }
+      options: { trackingId: 'UA-52765720-3' }
     },
 
     // style pre-processing & optimization
