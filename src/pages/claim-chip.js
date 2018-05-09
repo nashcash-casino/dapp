@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import Link from 'gatsby-link'
 import { Helmet } from 'react-helmet'
 import { Timeline } from 'react-twitter-widgets'
 
 import Container from '../components/ui/Container'
-import Button from '../components/ui/button'
+import Button from '../components/ui/Button'
+
+class TimelineFix extends PureComponent {
+  render () {
+    return <Timeline {...this.props} />
+  }
+}
 
 const ClaimChip = ({ chipValue, numChips }) => (
   <Container>
@@ -44,7 +50,7 @@ const ClaimChip = ({ chipValue, numChips }) => (
           <Button className='flex-auto mb3 w-100 f6 f5-ns'>MyCrypto / MEW / Other</Button>
         </Link>
       </div> */}
-      <Timeline
+      <TimelineFix
         dataSource={{
           sourceType: 'profile',
           screenName: 'nashcash_casino'
