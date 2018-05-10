@@ -5,6 +5,7 @@ import { Timeline } from 'react-twitter-widgets'
 
 import Container from '../components/ui/Container'
 import Button from '../components/ui/Button'
+import withContractState from '../components/hocs/withContractState'
 
 class TimelineFix extends PureComponent {
   render () {
@@ -23,7 +24,7 @@ const ClaimChip = ({ chipValue, numChips }) => (
       <div className='flex flex-column flex-row-ns justify-between'>
         <h2 className='f4 lh-copy mv0'>
           <label>Chip Value: </label>
-          {chipValue} ETH
+          {chipValue.toFixed(2)} ETH
         </h2>
         <h2 className='f4 lh-copy mv0'>
           <label>Chips Unclaimed: </label>
@@ -67,7 +68,8 @@ const ClaimChip = ({ chipValue, numChips }) => (
 
 ClaimChip.defaultProps = {
   chipValue: 0.01,
-  numChips: 500
+  numChips: 500,
+  unclaimedChipIds: []
 }
 
-export default ClaimChip
+export default withContractState(ClaimChip)
